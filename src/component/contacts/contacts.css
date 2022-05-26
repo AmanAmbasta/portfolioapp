@@ -1,0 +1,16 @@
+.contact-wrapper {
+    flex-direction: column;
+    width: 50vw;
+    transform: translate(-50%,-70%);
+}
+.top-link{
+    font-size: small;
+    transition: all ease-in-out 0.1s;
+}
+.top-link:hover{
+    font-size: smaller;
+}
+.lines a {
+    text-decoration: underline;
+    margin: 5px;
+}

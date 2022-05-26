@@ -1,0 +1,44 @@
+.project-card-wrapper {
+    height: 240px;
+    width: 320px;
+    margin-bottom:10px ;
+}
+
+
+.material-icons {
+    font-size: 16px;
+    padding: 1px 2px;
+    transform: rotateZ(-45deg);
+}
+
+.btn {
+    color: white;
+    background-color: #010101e6;
+    border-radius: 2px;
+    margin: 1px 2px 1px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.preview {
+    transform: rotateZ(0deg);
+}
+
+img {
+    height: 85%;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.project-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.project-title {
+    font-size: 18px;
+}

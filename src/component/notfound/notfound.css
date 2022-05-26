@@ -1,0 +1,65 @@
+.error-notfound {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 3fr 1.6fr;
+}
+
+.error-picture {
+    background: url(../../assets/404.png) no-repeat 100%;
+    background-size: 100%;
+}
+
+.terminal {
+    background: black;
+    height: 60%;
+    width: 80%;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+.terminal::before {
+    position: absolute;
+    background: black;
+    content: "terminal";
+    top: -15px;
+    left: 5px;
+    padding: 0 15px;
+}
+
+.prompt {
+    color: #1ff042;
+    font-family: monospace;
+    font-size: clamp(12px, 15px, 20px);
+    font-weight: bold;
+}
+
+.prompt::before {
+    content: ">";
+    margin: 0 5px;
+}
+
+.new-output {
+    height: 15px;
+    width: 12px;
+    background: #1ff042;
+    animation: blink 0.5s infinite linear;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

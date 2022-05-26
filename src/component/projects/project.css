@@ -1,0 +1,13 @@
+main.projects {
+    overflow-y: auto;
+    width: 70vw;
+    height: 60vh;
+    flex-wrap: wrap;
+    padding: 1%;
+    border-radius: 6px;
+    box-shadow: 0.5px 0.5px 3px 0.3px #333;
+}
+
+.center-conatiner {
+    transform: translate(-50%,-65%);
+}

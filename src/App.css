@@ -1,38 +1,125 @@
+* {
+  --plane-height: 15vh;
+  --footer-height: 15vh;
+  --slow-plane-height: 50px;
+  --fast-plane-height: 30px;
+}
+
 .App {
-  text-align: center;
+  background: rgb(7,7,7);
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+ 
+.heading-main {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #22efab;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.center-conatiner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+footer .city-markup {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(./assets/loaction.png);
+  background-size: 30% 100%;
+  z-index: 1;
+}
+
+.plane {
+  width: 65px;
+  z-index: 1000;
+  bottom: 20vh;
+  position: absolute;
+}
+
+a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.speed-plane {
+  background: url(./assets/fast-plane.png) no-repeat;
+  height: var(--fast-plane-height);
+  left: 200px;
+  background-size: 100%;
+  animation: speedPlane 5s infinite linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.slow-plane {
+  background: url(./assets/slow-plane.png) no-repeat;
+  bottom: 18vh;
+  left: 0;
+  background-size: 100%;
+  height: var(--slow-plane-height);
+  animation: slowPlane 10s infinite linear;
+}
+
+@keyframes speedPlane {
+  0% {
+    left: 0;
+    bottom: var(--plane-height);
   }
-  to {
-    transform: rotate(360deg);
+
+  25% {
+    bottom: calc(var(--plane-height) + 2vh);
+  }
+
+  50% {
+    bottom: calc(var(--plane-height) + 5vh);
+  }
+
+  75% {
+    bottom: calc(var(--plane-height) + 2vh);
+  }
+
+  100% {
+    left: 100vw;
+    bottom: var(--plane-height);
+  }
+}
+
+@keyframes slowPlane {
+  0% {
+    left: 100vw;
+    bottom: 20vh;
+  }
+
+  25% {
+    bottom: calc(var(--plane-height) - 2vh);
+  }
+
+  50% {
+    bottom: calc(var(--plane-height) - 5vh);
+  }
+
+  75% {
+    bottom: calc(var(--plane-height) - 2vh);
+  }
+
+  100% {
+    left: -5vw;
+    bottom: 20vh;
   }
 }
