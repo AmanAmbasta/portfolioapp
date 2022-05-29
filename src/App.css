@@ -42,7 +42,7 @@ footer .city-markup {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: url(./assets/loaction.png);
+  background: url(https://storage.googleapis.com/kaman-main/static-files/portfolioapp/img/loaction.png);
   background-size: 30% 100%;
   z-index: 1;
 }
@@ -60,7 +60,7 @@ a{
 }
 
 .speed-plane {
-  background: url(./assets/fast-plane.png) no-repeat;
+  background: url(https://storage.googleapis.com/kaman-main/static-files/portfolioapp/img/fast-plane.png) no-repeat;
   height: var(--fast-plane-height);
   left: 200px;
   background-size: 100%;
@@ -68,7 +68,7 @@ a{
 }
 
 .slow-plane {
-  background: url(./assets/slow-plane.png) no-repeat;
+  background: url(https://storage.googleapis.com/kaman-main/static-files/portfolioapp/img/slow-plane.png) no-repeat;
   bottom: 18vh;
   left: 0;
   background-size: 100%;

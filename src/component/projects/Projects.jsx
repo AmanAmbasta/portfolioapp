@@ -4,8 +4,10 @@ import ProjectsCard from "../project-card/ProjectCard";
 function Projects() {
   const [projectList, setProjectList] = useState([]);
   useEffect(() => {
-    if (process.env.REACT_APP_PROJECT_URL) {
-      fetch(process.env.REACT_APP_PROJECT_URL)
+    if ("https://storage.googleapis.com/kaman-main/static-files/portfolioapp/projectList.json") {
+      fetch("https://storage.googleapis.com/kaman-main/static-files/portfolioapp/projectList.json", 
+      {method: 'GET', 
+      mode: 'no-cors'})
         .then((resp) => resp.json())
         .then((list) => setProjectList([...projectList, list]));
     }

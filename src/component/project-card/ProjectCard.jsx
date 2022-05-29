@@ -1,5 +1,4 @@
 import "./projectCard.css";
-import projectImageDemo from "../../assets/project.png";
 function ProjectCard({
   projectImage = "/src/assets/project.png",
   projectTitle = "demo porject",
@@ -7,7 +6,7 @@ function ProjectCard({
   previewLink = "#preview",
 }) {
   if (projectTitle === "demo porject") {
-    projectImage = projectImageDemo 
+    projectImage = "https://storage.googleapis.com/kaman-main/static-files/portfolioapp/img/demo-project.png" 
   }
 
   return (

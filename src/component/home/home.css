@@ -17,8 +17,8 @@ Link,a{
     place-items: center;
     height: 200px ;
     aspect-ratio: 1;
+    background: url(https://storage.googleapis.com/kaman-main/static-files/portfolioapp/img/me.jpeg) no-repeat;
     border-radius: 50%;
-    background: var(--profile-url) no-repeat pink;
     background-size: 100% 104%;
 }
 
@@ -62,7 +62,6 @@ Link,a{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    /* box-shadow: 1px 1px 5px #ccc; */
 }
 
 .nav-links div:hover {
