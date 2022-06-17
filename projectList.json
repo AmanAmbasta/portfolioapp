@@ -1,5 +1,37 @@
-[{
-    "projectTitle":"Demno",
-    "sourceCodeLink":"https://link",
-    "previewLink":"https://link"  
-}]
+[
+  {
+    "projectTitle": "The Classic Ladies (E Commerce)",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "Dorabhai",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "Music App (Spotify Clone)",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "OXY Call (Zoom Clone)",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "Notepad",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "Image Compression",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  },
+  {
+    "projectTitle": "Watermaking Using DCT and DWT",
+    "sourceCodeLink": "https://link",
+    "previewLink": "https://link"
+  }
+]

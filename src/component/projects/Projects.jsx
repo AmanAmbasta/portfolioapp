@@ -4,7 +4,7 @@ import ProjectsCard from "../project-card/ProjectCard";
 function Projects() {
   const [projectList, setProjectList] = useState([]);
   useEffect(() => {
-    let url = process.env.REACT_APP_PROJECT_URL;
+    let url = process.env.REACT_APP_PROJECT_URL+"?a="+(Math.floor(Math.random()*9999));
     fetch(url, {
       mode: "no-cors",
     })
